@@ -1,0 +1,3 @@
+<use name="root"/>
+<flags CXXFLAGS="-g -Wall"/>
+<bin name="runPrepareForTraining" file="PrepareForTraining.cc"></bin>

@@ -1,0 +1,1021 @@
+//////////////////////////////////////////////////////////
+// This class has been automatically generated on
+// Mon Feb  9 17:59:33 2015 by ROOT version 5.32/00
+// from TTree ttree/ttree
+// found on file: qcd-1400to1800.root
+//////////////////////////////////////////////////////////
+
+#ifndef PrepareForTraining_h
+#define PrepareForTraining_h
+
+#include <TROOT.h>
+#include <TChain.h>
+#include <TFile.h>
+
+// Header file for the classes stored in the TTree if any.
+
+// Fixed size dimensions of array or collections stored in the TTree if any.
+
+class PrepareForTraining {
+public :
+   TTree          *fChain;   //!pointer to the analyzed TTree or TChain
+   Int_t           fCurrent; //!current Tree number in a TChain
+
+   // Declaration of leaf types
+   Int_t           JetInfo_nJet;
+   Float_t         JetInfo_Jet_pt[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_genpt[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_residual[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_jes[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_eta[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_phi[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_mass[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_ntracks[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nseltracks[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_flavour[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nbHadrons[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_ncHadrons[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_ProbaN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_ProbaP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_Proba[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_BprobN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_BprobP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_Bprob[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SvxN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_Svx[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SvxNHP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SvxHP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SimpIVF_HP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SimpIVF_HE[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_DoubIVF_HE[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_CombSvxN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_CombSvxP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_CombSvx[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_CombIVF[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_CombIVF_P[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftMuN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftMuP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftMu[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftElN[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftElP[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_Jet_SoftEl[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nFirstTrack[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nLastTrack[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nFirstSV[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nLastSV[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_SV_multi[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_looseID[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_tightID[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_nSV;
+   Float_t         JetInfo_SV_x[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_y[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_z[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_ex[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_ey[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_ez[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_chi2[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_ndf[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_flight[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_flightErr[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_deltaR_jet[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_deltaR_sum_jet[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_deltaR_sum_dir[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_vtx_pt[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_flight2D[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_flight2DErr[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_totCharge[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_vtxDistJetAxis[11];   //[JetInfo.nSV]
+   Int_t           JetInfo_SV_nTrk[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_mass[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_vtx_eta[11];   //[JetInfo.nSV]
+   Float_t         JetInfo_SV_vtx_phi[11];   //[JetInfo.nSV]
+   Int_t           JetInfo_Jet_FatJetIdx[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_nPFElectron;
+   Int_t           JetInfo_PFElectron_IdxJet[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_pt[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_eta[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_phi[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_ptrel[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_deltaR[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_ratio[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_ratioRel[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_IP[5];   //[JetInfo.nPFElectron]
+   Float_t         JetInfo_PFElectron_IP2D[5];   //[JetInfo.nPFElectron]
+   Int_t           JetInfo_nPFMuon;
+   Int_t           JetInfo_PFMuon_IdxJet[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_pt[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_eta[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_phi[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_ptrel[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_deltaR[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_ratio[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_ratioRel[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_IP[6];   //[JetInfo.nPFMuon]
+   Float_t         JetInfo_PFMuon_IP2D[6];   //[JetInfo.nPFMuon]
+   Int_t           JetInfo_Jet_nFirstTrkTagVarCSV[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nLastTrkTagVarCSV[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nFirstTrkEtaRelTagVarCSV[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_Jet_nLastTrkEtaRelTagVarCSV[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackJetPt[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_jetNTracks[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_jetNTracksEtaRel[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSumJetEtRatio[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSumJetDeltaR[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSip2dValAboveCharm[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSip2dSigAboveCharm[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSip3dValAboveCharm[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_trackSip3dSigAboveCharm[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_vertexCategory[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_jetNSecondaryVertices[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_vertexMass[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_vertexNTracks[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_vertexEnergyRatio[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_vertexJetDeltaR[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_flightDistance2dVal[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_flightDistance2dSig[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_flightDistance3dVal[12];   //[JetInfo.nJet]
+   Float_t         JetInfo_TagVarCSV_flightDistance3dSig[12];   //[JetInfo.nJet]
+   Int_t           JetInfo_nTrkTagVarCSV;
+   Int_t           JetInfo_nTrkEtaRelTagVarCSV;
+   Float_t         JetInfo_TagVarCSV_trackMomentum[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackEta[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackPhi[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackPtRel[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackPPar[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackDeltaR[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackPtRatio[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackPParRatio[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackSip2dVal[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackSip2dSig[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackSip3dVal[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackSip3dSig[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackDecayLenVal[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackDecayLenSig[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackJetDistVal[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackJetDistSig[61];   //[JetInfo.nTrkTagVarCSV]
+   Float_t         JetInfo_TagVarCSV_trackEtaRel[32];   //[JetInfo.nTrkEtaRelTagVarCSV]
+   Int_t           FatJetInfo_nJet;
+   Float_t         FatJetInfo_Jet_pt[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_genpt[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_residual[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_jes[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_eta[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_phi[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_mass[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_ntracks[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nseltracks[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_flavour[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nbHadrons[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_ncHadrons[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_ProbaN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_ProbaP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_Proba[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_BprobN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_BprobP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_Bprob[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SvxN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_Svx[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SvxNHP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SvxHP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SimpIVF_HP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SimpIVF_HE[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_DoubIVF_HE[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_CombSvxN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_CombSvxP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_CombSvx[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_CombIVF[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_CombIVF_P[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftMuN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftMuP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftMu[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftElN[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftElP[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_SoftEl[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nFirstTrack[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nLastTrack[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nFirstSV[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nLastSV[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_SV_multi[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_looseID[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_tightID[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_nSV;
+   Float_t         FatJetInfo_SV_x[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_y[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_z[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_ex[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_ey[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_ez[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_chi2[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_ndf[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_flight[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_flightErr[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_deltaR_jet[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_deltaR_sum_jet[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_deltaR_sum_dir[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_vtx_pt[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_flight2D[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_flight2DErr[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_totCharge[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_vtxDistJetAxis[12];   //[FatJetInfo.nSV]
+   Int_t           FatJetInfo_SV_nTrk[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_mass[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_vtx_eta[12];   //[FatJetInfo.nSV]
+   Float_t         FatJetInfo_SV_vtx_phi[12];   //[FatJetInfo.nSV]
+   Float_t	   FatJetInfo_SV_EnergyRatio[12]; 	
+  Float_t	    FatJetInfo_SV_dir_x[12];
+  Float_t           FatJetInfo_SV_dir_y[12];
+  Float_t           FatJetInfo_SV_dir_z[12];	
+   Float_t         FatJetInfo_Jet_ptGroomed[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_jesGroomed[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_etaGroomed[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_phiGroomed[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_massGroomed[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_tau1[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_tau2[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_tau1IVF[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_Jet_tau2IVF[6];   //[FatJetInfo.nJet]
+
+   Int_t           FatJetInfo_Jet_nSubJets[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nFirstSJ[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nLastSJ[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_nSubJet;
+   Int_t           FatJetInfo_SubJetIdx[12];   //[FatJetInfo.nSubJet]
+   Int_t           FatJetInfo_Jet_nsharedtracks[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nsubjettracks[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nsharedsubjettracks[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_nPFElectron;
+   Int_t           FatJetInfo_PFElectron_IdxJet[5];   //[FatJetInfo.nPFElectron]
+   Float_t	   FatJetInfo_Jet_qvol[5];
+   Float_t         FatJetInfo_Jet_tauAxis1_px[5];
+   Float_t         FatJetInfo_Jet_tauAxis1_py[5];		
+   Float_t         FatJetInfo_Jet_tauAxis1_pz[5];
+   Float_t         FatJetInfo_Jet_tauAxis2_px[5];
+   Float_t         FatJetInfo_Jet_tauAxis2_py[5];
+   Float_t         FatJetInfo_Jet_tauAxis2_pz[5];
+   Float_t	   FatJetInfo_Jet_SD_chi[5];
+   Int_t 	   FatJetInfo_Jet_SD_nMicrojets[5];
+   Int_t           FatJetInfo_Jet_SD_nBtagMicrojets[5];		
+   Float_t         FatJetInfo_PFElectron_pt[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_eta[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_phi[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_ptrel[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_deltaR[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_ratio[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_ratioRel[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_IP[5];   //[FatJetInfo.nPFElectron]
+   Float_t         FatJetInfo_PFElectron_IP2D[5];   //[FatJetInfo.nPFElectron]
+   Int_t           FatJetInfo_nPFMuon;
+   Int_t           FatJetInfo_PFMuon_IdxJet[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_pt[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_eta[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_phi[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_ptrel[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_deltaR[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_ratio[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_ratioRel[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_IP[6];   //[FatJetInfo.nPFMuon]
+   Float_t         FatJetInfo_PFMuon_IP2D[6];   //[FatJetInfo.nPFMuon]
+   Int_t           FatJetInfo_Jet_nFirstTrkTagVarCSV[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nLastTrkTagVarCSV[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nFirstTrkEtaRelTagVarCSV[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_Jet_nLastTrkEtaRelTagVarCSV[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackJetPt[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_jetNTracks[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_jetNTracksEtaRel[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSumJetEtRatio[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSumJetDeltaR[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSip2dValAboveCharm[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSip2dSigAboveCharm[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSip3dValAboveCharm[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_trackSip3dSigAboveCharm[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_vertexCategory[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_jetNSecondaryVertices[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_vertexMass[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_vertexNTracks[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_vertexEnergyRatio[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_vertexJetDeltaR[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_flightDistance2dVal[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_flightDistance2dSig[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_flightDistance3dVal[6];   //[FatJetInfo.nJet]
+   Float_t         FatJetInfo_TagVarCSV_flightDistance3dSig[6];   //[FatJetInfo.nJet]
+   Int_t           FatJetInfo_nTrkTagVarCSV;
+   Int_t           FatJetInfo_nTrkEtaRelTagVarCSV;
+   Float_t         FatJetInfo_TagVarCSV_trackMomentum[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackEta[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackPhi[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackPtRel[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackPPar[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackDeltaR[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackPtRatio[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackPParRatio[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackSip2dVal[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackSip2dSig[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackSip3dVal[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackSip3dSig[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackDecayLenVal[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackDecayLenSig[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackJetDistVal[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackJetDistSig[77];   //[FatJetInfo.nTrkTagVarCSV]
+   Float_t         FatJetInfo_TagVarCSV_trackEtaRel[33];   //[FatJetInfo.nTrkEtaRelTagVarCSV]
+
+   // List of branches
+  TBranch	 *b_FatJetInfo_Jet_qvol;
+TBranch          *b_FatJetInfo_Jet_tauAxis1_px;
+TBranch          *b_FatJetInfo_Jet_tauAxis1_py;
+TBranch          *b_FatJetInfo_Jet_tauAxis1_pz;
+TBranch          *b_FatJetInfo_Jet_tauAxis2_px;
+TBranch          *b_FatJetInfo_Jet_tauAxis2_py;
+TBranch          *b_FatJetInfo_Jet_tauAxis2_pz;
+TBranch          *b_FatJetInfo_Jet_SD_chi;
+TBranch          *b_FatJetInfo_Jet_SD_nMicrojets;
+TBranch          *b_FatJetInfo_Jet_SD_nBtagMicrojets;
+
+
+   TBranch        *b_JetInfo_nJet;   //!
+   TBranch        *b_JetInfo_Jet_pt;   //!
+   TBranch        *b_JetInfo_Jet_genpt;   //!
+   TBranch        *b_JetInfo_Jet_residual;   //!
+   TBranch        *b_JetInfo_Jet_jes;   //!
+   TBranch        *b_JetInfo_Jet_eta;   //!
+   TBranch        *b_JetInfo_Jet_phi;   //!
+   TBranch        *b_JetInfo_Jet_mass;   //!
+   TBranch        *b_JetInfo_Jet_ntracks;   //!
+   TBranch        *b_JetInfo_Jet_nseltracks;   //!
+   TBranch        *b_JetInfo_Jet_flavour;   //!
+   TBranch        *b_JetInfo_Jet_nbHadrons;   //!
+   TBranch        *b_JetInfo_Jet_ncHadrons;   //!
+   TBranch        *b_JetInfo_Jet_ProbaN;   //!
+   TBranch        *b_JetInfo_Jet_ProbaP;   //!
+   TBranch        *b_JetInfo_Jet_Proba;   //!
+   TBranch        *b_JetInfo_Jet_BprobN;   //!
+   TBranch        *b_JetInfo_Jet_BprobP;   //!
+   TBranch        *b_JetInfo_Jet_Bprob;   //!
+   TBranch        *b_JetInfo_Jet_SvxN;   //!
+   TBranch        *b_JetInfo_Jet_Svx;   //!
+   TBranch        *b_JetInfo_Jet_SvxNHP;   //!
+   TBranch        *b_JetInfo_Jet_SvxHP;   //!
+   TBranch        *b_JetInfo_Jet_SimpIVF_HP;   //!
+   TBranch        *b_JetInfo_Jet_SimpIVF_HE;   //!
+   TBranch        *b_JetInfo_Jet_DoubIVF_HE;   //!
+   TBranch        *b_JetInfo_Jet_CombSvxN;   //!
+   TBranch        *b_JetInfo_Jet_CombSvxP;   //!
+   TBranch        *b_JetInfo_Jet_CombSvx;   //!
+   TBranch        *b_JetInfo_Jet_CombIVF;   //!
+   TBranch        *b_JetInfo_Jet_CombIVF_P;   //!
+   TBranch        *b_JetInfo_Jet_SoftMuN;   //!
+   TBranch        *b_JetInfo_Jet_SoftMuP;   //!
+   TBranch        *b_JetInfo_Jet_SoftMu;   //!
+   TBranch        *b_JetInfo_Jet_SoftElN;   //!
+   TBranch        *b_JetInfo_Jet_SoftElP;   //!
+   TBranch        *b_JetInfo_Jet_SoftEl;   //!
+   TBranch        *b_JetInfo_Jet_nFirstTrack;   //!
+   TBranch        *b_JetInfo_Jet_nLastTrack;   //!
+   TBranch        *b_JetInfo_Jet_nFirstSV;   //!
+   TBranch        *b_JetInfo_Jet_nLastSV;   //!
+   TBranch        *b_JetInfo_Jet_SV_multi;   //!
+   TBranch        *b_JetInfo_Jet_looseID;   //!
+   TBranch        *b_JetInfo_Jet_tightID;   //!
+   TBranch        *b_JetInfo_nSV;   //!
+   TBranch        *b_JetInfo_SV_x;   //!
+   TBranch        *b_JetInfo_SV_y;   //!
+   TBranch        *b_JetInfo_SV_z;   //!
+   TBranch        *b_JetInfo_SV_ex;   //!
+   TBranch        *b_JetInfo_SV_ey;   //!
+   TBranch        *b_JetInfo_SV_ez;   //!
+   TBranch        *b_JetInfo_SV_chi2;   //!
+   TBranch        *b_JetInfo_SV_ndf;   //!
+   TBranch        *b_JetInfo_SV_flight;   //!
+   TBranch        *b_JetInfo_SV_flightErr;   //!
+   TBranch        *b_JetInfo_SV_deltaR_jet;   //!
+   TBranch        *b_JetInfo_SV_deltaR_sum_jet;   //!
+   TBranch        *b_JetInfo_SV_deltaR_sum_dir;   //!
+   TBranch        *b_JetInfo_SV_vtx_pt;   //!
+   TBranch        *b_JetInfo_SV_flight2D;   //!
+   TBranch        *b_JetInfo_SV_flight2DErr;   //!
+   TBranch        *b_JetInfo_SV_totCharge;   //!
+   TBranch        *b_JetInfo_SV_vtxDistJetAxis;   //!
+   TBranch        *b_JetInfo_SV_nTrk;   //!
+   TBranch        *b_JetInfo_SV_mass;   //!
+   TBranch        *b_JetInfo_SV_vtx_eta;   //!
+   TBranch        *b_JetInfo_SV_vtx_phi;   //!
+   TBranch        *b_JetInfo_Jet_FatJetIdx;   //!
+   TBranch        *b_JetInfo_nPFElectron;   //!
+   TBranch        *b_JetInfo_PFElectron_IdxJet;   //!
+   TBranch        *b_JetInfo_PFElectron_pt;   //!
+   TBranch        *b_JetInfo_PFElectron_eta;   //!
+   TBranch        *b_JetInfo_PFElectron_phi;   //!
+   TBranch        *b_JetInfo_PFElectron_ptrel;   //!
+   TBranch        *b_JetInfo_PFElectron_deltaR;   //!
+   TBranch        *b_JetInfo_PFElectron_ratio;   //!
+   TBranch        *b_JetInfo_PFElectron_ratioRel;   //!
+   TBranch        *b_JetInfo_PFElectron_IP;   //!
+   TBranch        *b_JetInfo_PFElectron_IP2D;   //!
+   TBranch        *b_JetInfo_nPFMuon;   //!
+   TBranch        *b_JetInfo_PFMuon_IdxJet;   //!
+   TBranch        *b_JetInfo_PFMuon_pt;   //!
+   TBranch        *b_JetInfo_PFMuon_eta;   //!
+   TBranch        *b_JetInfo_PFMuon_phi;   //!
+   TBranch        *b_JetInfo_PFMuon_ptrel;   //!
+   TBranch        *b_JetInfo_PFMuon_deltaR;   //!
+   TBranch        *b_JetInfo_PFMuon_ratio;   //!
+   TBranch        *b_JetInfo_PFMuon_ratioRel;   //!
+   TBranch        *b_JetInfo_PFMuon_IP;   //!
+   TBranch        *b_JetInfo_PFMuon_IP2D;   //!
+   TBranch        *b_JetInfo_Jet_nFirstTrkTagVarCSV;   //!
+   TBranch        *b_JetInfo_Jet_nLastTrkTagVarCSV;   //!
+   TBranch        *b_JetInfo_Jet_nFirstTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_JetInfo_Jet_nLastTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackJetPt;   //!
+   TBranch        *b_JetInfo_TagVarCSV_jetNTracks;   //!
+   TBranch        *b_JetInfo_TagVarCSV_jetNTracksEtaRel;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSumJetEtRatio;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSumJetDeltaR;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip2dValAboveCharm;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip2dSigAboveCharm;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip3dValAboveCharm;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip3dSigAboveCharm;   //!
+   TBranch        *b_JetInfo_TagVarCSV_vertexCategory;   //!
+   TBranch        *b_JetInfo_TagVarCSV_jetNSecondaryVertices;   //!
+   TBranch        *b_JetInfo_TagVarCSV_vertexMass;   //!
+   TBranch        *b_JetInfo_TagVarCSV_vertexNTracks;   //!
+   TBranch        *b_JetInfo_TagVarCSV_vertexEnergyRatio;   //!
+   TBranch        *b_JetInfo_TagVarCSV_vertexJetDeltaR;   //!
+   TBranch        *b_JetInfo_TagVarCSV_flightDistance2dVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_flightDistance2dSig;   //!
+   TBranch        *b_JetInfo_TagVarCSV_flightDistance3dVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_flightDistance3dSig;   //!
+   TBranch        *b_JetInfo_nTrkTagVarCSV;   //!
+   TBranch        *b_JetInfo_nTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackMomentum;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackEta;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackPhi;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackPtRel;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackPPar;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackDeltaR;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackPtRatio;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackPParRatio;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip2dVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip2dSig;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip3dVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackSip3dSig;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackDecayLenVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackDecayLenSig;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackJetDistVal;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackJetDistSig;   //!
+   TBranch        *b_JetInfo_TagVarCSV_trackEtaRel;   //!
+   TBranch        *b_FatJetInfo_nJet;   //!
+   TBranch        *b_FatJetInfo_Jet_pt;   //!
+   TBranch        *b_FatJetInfo_Jet_genpt;   //!
+   TBranch        *b_FatJetInfo_Jet_residual;   //!
+   TBranch        *b_FatJetInfo_Jet_jes;   //!
+   TBranch        *b_FatJetInfo_Jet_eta;   //!
+   TBranch        *b_FatJetInfo_Jet_phi;   //!
+   TBranch        *b_FatJetInfo_Jet_mass;   //!
+   TBranch        *b_FatJetInfo_Jet_ntracks;   //!
+   TBranch        *b_FatJetInfo_Jet_nseltracks;   //!
+   TBranch        *b_FatJetInfo_Jet_flavour;   //!
+   TBranch        *b_FatJetInfo_Jet_nbHadrons;   //!
+   TBranch        *b_FatJetInfo_Jet_ncHadrons;   //!
+   TBranch        *b_FatJetInfo_Jet_ProbaN;   //!
+   TBranch        *b_FatJetInfo_Jet_ProbaP;   //!
+   TBranch        *b_FatJetInfo_Jet_Proba;   //!
+   TBranch        *b_FatJetInfo_Jet_BprobN;   //!
+   TBranch        *b_FatJetInfo_Jet_BprobP;   //!
+   TBranch        *b_FatJetInfo_Jet_Bprob;   //!
+   TBranch        *b_FatJetInfo_Jet_SvxN;   //!
+   TBranch        *b_FatJetInfo_Jet_Svx;   //!
+   TBranch        *b_FatJetInfo_Jet_SvxNHP;   //!
+   TBranch        *b_FatJetInfo_Jet_SvxHP;   //!
+   TBranch        *b_FatJetInfo_Jet_SimpIVF_HP;   //!
+   TBranch        *b_FatJetInfo_Jet_SimpIVF_HE;   //!
+   TBranch        *b_FatJetInfo_Jet_DoubIVF_HE;   //!
+   TBranch        *b_FatJetInfo_Jet_CombSvxN;   //!
+   TBranch        *b_FatJetInfo_Jet_CombSvxP;   //!
+   TBranch        *b_FatJetInfo_Jet_CombSvx;   //!
+   TBranch        *b_FatJetInfo_Jet_CombIVF;   //!
+   TBranch        *b_FatJetInfo_Jet_CombIVF_P;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftMuN;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftMuP;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftMu;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftElN;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftElP;   //!
+   TBranch        *b_FatJetInfo_Jet_SoftEl;   //!
+   TBranch        *b_FatJetInfo_Jet_nFirstTrack;   //!
+   TBranch        *b_FatJetInfo_Jet_nLastTrack;   //!
+   TBranch        *b_FatJetInfo_Jet_nFirstSV;   //!
+   TBranch        *b_FatJetInfo_Jet_nLastSV;   //!
+   TBranch        *b_FatJetInfo_Jet_SV_multi;   //!
+   TBranch        *b_FatJetInfo_Jet_looseID;   //!
+   TBranch        *b_FatJetInfo_Jet_tightID;   //!
+   TBranch        *b_FatJetInfo_nSV;   //!
+   TBranch        *b_FatJetInfo_SV_x;   //!
+   TBranch        *b_FatJetInfo_SV_y;   //!
+   TBranch        *b_FatJetInfo_SV_z;   //!
+   TBranch        *b_FatJetInfo_SV_ex;   //!
+   TBranch        *b_FatJetInfo_SV_ey;   //!
+   TBranch        *b_FatJetInfo_SV_ez;   //!
+   TBranch        *b_FatJetInfo_SV_chi2;   //!
+   TBranch        *b_FatJetInfo_SV_ndf;   //!
+   TBranch        *b_FatJetInfo_SV_flight;   //!
+   TBranch        *b_FatJetInfo_SV_flightErr;   //!
+   TBranch        *b_FatJetInfo_SV_deltaR_jet;   //!
+   TBranch        *b_FatJetInfo_SV_deltaR_sum_jet;   //!
+   TBranch        *b_FatJetInfo_SV_deltaR_sum_dir;   //!
+   TBranch        *b_FatJetInfo_SV_vtx_pt;   //!
+   TBranch        *b_FatJetInfo_SV_flight2D;   //!
+   TBranch        *b_FatJetInfo_SV_flight2DErr;   //!
+   TBranch        *b_FatJetInfo_SV_totCharge;   //!
+   TBranch        *b_FatJetInfo_SV_vtxDistJetAxis;   //!
+   TBranch        *b_FatJetInfo_SV_nTrk;   //!
+   TBranch        *b_FatJetInfo_SV_mass;   //!
+   TBranch        *b_FatJetInfo_SV_vtx_eta;   //!
+   TBranch        *b_FatJetInfo_SV_vtx_phi;   //!
+   TBranch        *b_FatJetInfo_SV_EnergyRatio;//!	
+   TBranch        *b_FatJetInfo_SV_dir_x;
+   TBranch        *b_FatJetInfo_SV_dir_y;
+    TBranch        *b_FatJetInfo_SV_dir_z;
+   TBranch        *b_FatJetInfo_Jet_ptGroomed;   //!
+   TBranch        *b_FatJetInfo_Jet_jesGroomed;   //!
+   TBranch        *b_FatJetInfo_Jet_etaGroomed;   //!
+   TBranch        *b_FatJetInfo_Jet_phiGroomed;   //!
+   TBranch        *b_FatJetInfo_Jet_massGroomed;   //!
+   TBranch        *b_FatJetInfo_Jet_tau1;   //!
+   TBranch        *b_FatJetInfo_Jet_tau2;   //!
+   TBranch        *b_FatJetInfo_Jet_tau1IVF;   //!
+   TBranch        *b_FatJetInfo_Jet_tau2IVF;   //!
+   TBranch        *b_FatJetInfo_Jet_nSubJets;   //!
+   TBranch        *b_FatJetInfo_Jet_nFirstSJ;   //!
+   TBranch        *b_FatJetInfo_Jet_nLastSJ;   //!
+   TBranch        *b_FatJetInfo_nSubJet;   //!
+   TBranch        *b_FatJetInfo_SubJetIdx;   //!
+   TBranch        *b_FatJetInfo_Jet_nsharedtracks;   //!
+   TBranch        *b_FatJetInfo_Jet_nsubjettracks;   //!
+   TBranch        *b_FatJetInfo_Jet_nsharedsubjettracks;   //!
+   TBranch        *b_FatJetInfo_nPFElectron;   //!
+   TBranch        *b_FatJetInfo_PFElectron_IdxJet;   //!
+   TBranch        *b_FatJetInfo_PFElectron_pt;   //!
+   TBranch        *b_FatJetInfo_PFElectron_eta;   //!
+   TBranch        *b_FatJetInfo_PFElectron_phi;   //!
+   TBranch        *b_FatJetInfo_PFElectron_ptrel;   //!
+   TBranch        *b_FatJetInfo_PFElectron_deltaR;   //!
+   TBranch        *b_FatJetInfo_PFElectron_ratio;   //!
+   TBranch        *b_FatJetInfo_PFElectron_ratioRel;   //!
+   TBranch        *b_FatJetInfo_PFElectron_IP;   //!
+   TBranch        *b_FatJetInfo_PFElectron_IP2D;   //!
+   TBranch        *b_FatJetInfo_nPFMuon;   //!
+   TBranch        *b_FatJetInfo_PFMuon_IdxJet;   //!
+   TBranch        *b_FatJetInfo_PFMuon_pt;   //!
+   TBranch        *b_FatJetInfo_PFMuon_eta;   //!
+   TBranch        *b_FatJetInfo_PFMuon_phi;   //!
+   TBranch        *b_FatJetInfo_PFMuon_ptrel;   //!
+   TBranch        *b_FatJetInfo_PFMuon_deltaR;   //!
+   TBranch        *b_FatJetInfo_PFMuon_ratio;   //!
+   TBranch        *b_FatJetInfo_PFMuon_ratioRel;   //!
+   TBranch        *b_FatJetInfo_PFMuon_IP;   //!
+   TBranch        *b_FatJetInfo_PFMuon_IP2D;   //!
+   TBranch        *b_FatJetInfo_Jet_nFirstTrkTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_Jet_nLastTrkTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_Jet_nFirstTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_Jet_nLastTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackJetPt;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_jetNTracks;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_jetNTracksEtaRel;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSumJetEtRatio;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSumJetDeltaR;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip2dValAboveCharm;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip2dSigAboveCharm;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip3dValAboveCharm;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip3dSigAboveCharm;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_vertexCategory;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_jetNSecondaryVertices;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_vertexMass;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_vertexNTracks;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_vertexEnergyRatio;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_vertexJetDeltaR;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_flightDistance2dVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_flightDistance2dSig;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_flightDistance3dVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_flightDistance3dSig;   //!
+   TBranch        *b_FatJetInfo_nTrkTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_nTrkEtaRelTagVarCSV;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackMomentum;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackEta;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackPhi;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackPtRel;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackPPar;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackDeltaR;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackPtRatio;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackPParRatio;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip2dVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip2dSig;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip3dVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackSip3dSig;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackDecayLenVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackDecayLenSig;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackJetDistVal;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackJetDistSig;   //!
+   TBranch        *b_FatJetInfo_TagVarCSV_trackEtaRel;   //!
+
+   PrepareForTraining(TTree *tree=0);
+   virtual ~PrepareForTraining();
+   virtual Int_t    Cut(Long64_t entry);
+   virtual Int_t    GetEntry(Long64_t entry);
+   virtual Long64_t LoadTree(Long64_t entry);
+   virtual void     Init(TTree *tree);
+   virtual void     Loop();
+   virtual Bool_t   Notify();
+   virtual void     Show(Long64_t entry = -1);
+};
+
+#endif
+
+#ifdef PrepareForTraining_cxx
+PrepareForTraining::PrepareForTraining(TTree *tree) : fChain(0) 
+{
+// if parameter tree is not specified (or zero), connect the file
+// used to generate this class and read the Tree.
+   if (tree == 0) {
+     TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("root://xrootd.ba.infn.it//store/user/cvernier/qcd-300to470_top_ca15.root      TFile *f = (TFile*)gROOT->GetListOfFiles()->FindObject("root://xrootd.ba.\
+							    infn.it//store/user/cvernier/qcd-300to470_top_ca15.root");//qcd-1400to1800.root\
+");                                                                             
+      if (!f || !f->IsOpen()) {
+         f = new TFile("root://xrootd.ba.infn.it//store/user/cvernier/qcd-300to\
+470_top_ca15.root");
+      }
+      TDirectory * dir = (TDirectory*)f->Get("root://xrootd.ba.infn.it//store/u\
+							    ser/cvernier/qcd-300to470_top_ca15.root:/btaganaSubJets");
+      dir->GetObject("ttree",");//qcd-1400to1800.root");
+      if (!f || !f->IsOpen()) {
+         f = new TFile("root://xrootd.ba.infn.it//store/user/cvernier/qcd-300to470_top_ca15.root");
+      }
+      TDirectory * dir = (TDirectory*)f->Get("root://xrootd.ba.infn.it//store/user/cvernier/qcd-300to470_top_ca15.root:/btaganaSubJets");
+      dir->GetObject("ttree",tree);
+
+   }
+   Init(tree);
+}
+
+PrepareForTraining::~PrepareForTraining()
+{
+   if (!fChain) return;
+   delete fChain->GetCurrentFile();
+}
+
+Int_t PrepareForTraining::GetEntry(Long64_t entry)
+{
+// Read contents of entry.
+   if (!fChain) return 0;
+   return fChain->GetEntry(entry);
+}
+Long64_t PrepareForTraining::LoadTree(Long64_t entry)
+{
+// Set the environment to read one entry
+   if (!fChain) return -5;
+   Long64_t centry = fChain->LoadTree(entry);
+   if (centry < 0) return centry;
+   if (fChain->GetTreeNumber() != fCurrent) {
+      fCurrent = fChain->GetTreeNumber();
+      Notify();
+   }
+   return centry;
+}
+
+void PrepareForTraining::Init(TTree *tree)
+{
+   // The Init() function is called when the selector needs to initialize
+   // a new tree or chain. Typically here the branch addresses and branch
+   // pointers of the tree will be set.
+   // It is normally not necessary to make changes to the generated
+   // code, but the routine can be extended by the user if needed.
+   // Init() will be called many times when running on PROOF
+   // (once per file to be processed).
+
+   // Set branch addresses and branch pointers
+   if (!tree) return;
+   fChain = tree;
+   fCurrent = -1;
+   fChain->SetMakeClass(1);
+   fChain->SetBranchAddress("FatJetInfo.Jet_qvol",&FatJetInfo_Jet_qvol,&b_FatJetInfo_Jet_qvol);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis1_px",&FatJetInfo_Jet_tauAxis1_px, &b_FatJetInfo_Jet_tauAxis1_px);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis1_py",&FatJetInfo_Jet_tauAxis1_py,&b_FatJetInfo_Jet_tauAxis1_py);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis1_pz",&FatJetInfo_Jet_tauAxis1_pz,&b_FatJetInfo_Jet_tauAxis1_pz);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis2_px",&FatJetInfo_Jet_tauAxis2_px,&b_FatJetInfo_Jet_tauAxis2_px);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis2_py",&FatJetInfo_Jet_tauAxis2_py,&b_FatJetInfo_Jet_tauAxis2_py);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tauAxis2_pz",&FatJetInfo_Jet_tauAxis2_pz,&b_FatJetInfo_Jet_tauAxis2_pz);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SD_chi",&FatJetInfo_Jet_SD_chi,&b_FatJetInfo_Jet_SD_chi);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SD_nMicrojets",&FatJetInfo_Jet_SD_nMicrojets,&b_FatJetInfo_Jet_SD_nMicrojets);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SD_nBtagMicrojets",&FatJetInfo_Jet_SD_nBtagMicrojets,&b_FatJetInfo_Jet_SD_nBtagMicrojets);
+
+   fChain->SetBranchAddress("JetInfo.nJet", &JetInfo_nJet, &b_JetInfo_nJet);
+   fChain->SetBranchAddress("JetInfo.Jet_pt", JetInfo_Jet_pt, &b_JetInfo_Jet_pt);
+   fChain->SetBranchAddress("JetInfo.Jet_genpt", JetInfo_Jet_genpt, &b_JetInfo_Jet_genpt);
+   fChain->SetBranchAddress("JetInfo.Jet_residual", JetInfo_Jet_residual, &b_JetInfo_Jet_residual);
+   fChain->SetBranchAddress("JetInfo.Jet_jes", JetInfo_Jet_jes, &b_JetInfo_Jet_jes);
+   fChain->SetBranchAddress("JetInfo.Jet_eta", JetInfo_Jet_eta, &b_JetInfo_Jet_eta);
+   fChain->SetBranchAddress("JetInfo.Jet_phi", JetInfo_Jet_phi, &b_JetInfo_Jet_phi);
+   fChain->SetBranchAddress("JetInfo.Jet_mass", JetInfo_Jet_mass, &b_JetInfo_Jet_mass);
+   fChain->SetBranchAddress("JetInfo.Jet_ntracks", JetInfo_Jet_ntracks, &b_JetInfo_Jet_ntracks);
+   fChain->SetBranchAddress("JetInfo.Jet_nseltracks", JetInfo_Jet_nseltracks, &b_JetInfo_Jet_nseltracks);
+   fChain->SetBranchAddress("JetInfo.Jet_flavour", JetInfo_Jet_flavour, &b_JetInfo_Jet_flavour);
+   fChain->SetBranchAddress("JetInfo.Jet_nbHadrons", JetInfo_Jet_nbHadrons, &b_JetInfo_Jet_nbHadrons);
+   fChain->SetBranchAddress("JetInfo.Jet_ncHadrons", JetInfo_Jet_ncHadrons, &b_JetInfo_Jet_ncHadrons);
+   fChain->SetBranchAddress("JetInfo.Jet_ProbaN", JetInfo_Jet_ProbaN, &b_JetInfo_Jet_ProbaN);
+   fChain->SetBranchAddress("JetInfo.Jet_ProbaP", JetInfo_Jet_ProbaP, &b_JetInfo_Jet_ProbaP);
+   fChain->SetBranchAddress("JetInfo.Jet_Proba", JetInfo_Jet_Proba, &b_JetInfo_Jet_Proba);
+   fChain->SetBranchAddress("JetInfo.Jet_BprobN", JetInfo_Jet_BprobN, &b_JetInfo_Jet_BprobN);
+   fChain->SetBranchAddress("JetInfo.Jet_BprobP", JetInfo_Jet_BprobP, &b_JetInfo_Jet_BprobP);
+   fChain->SetBranchAddress("JetInfo.Jet_Bprob", JetInfo_Jet_Bprob, &b_JetInfo_Jet_Bprob);
+   fChain->SetBranchAddress("JetInfo.Jet_SvxN", JetInfo_Jet_SvxN, &b_JetInfo_Jet_SvxN);
+   fChain->SetBranchAddress("JetInfo.Jet_Svx", JetInfo_Jet_Svx, &b_JetInfo_Jet_Svx);
+   fChain->SetBranchAddress("JetInfo.Jet_SvxNHP", JetInfo_Jet_SvxNHP, &b_JetInfo_Jet_SvxNHP);
+   fChain->SetBranchAddress("JetInfo.Jet_SvxHP", JetInfo_Jet_SvxHP, &b_JetInfo_Jet_SvxHP);
+   fChain->SetBranchAddress("JetInfo.Jet_SimpIVF_HP", JetInfo_Jet_SimpIVF_HP, &b_JetInfo_Jet_SimpIVF_HP);
+   fChain->SetBranchAddress("JetInfo.Jet_SimpIVF_HE", JetInfo_Jet_SimpIVF_HE, &b_JetInfo_Jet_SimpIVF_HE);
+   fChain->SetBranchAddress("JetInfo.Jet_DoubIVF_HE", JetInfo_Jet_DoubIVF_HE, &b_JetInfo_Jet_DoubIVF_HE);
+   fChain->SetBranchAddress("JetInfo.Jet_CombSvxN", JetInfo_Jet_CombSvxN, &b_JetInfo_Jet_CombSvxN);
+   fChain->SetBranchAddress("JetInfo.Jet_CombSvxP", JetInfo_Jet_CombSvxP, &b_JetInfo_Jet_CombSvxP);
+   fChain->SetBranchAddress("JetInfo.Jet_CombSvx", JetInfo_Jet_CombSvx, &b_JetInfo_Jet_CombSvx);
+   fChain->SetBranchAddress("JetInfo.Jet_CombIVF", JetInfo_Jet_CombIVF, &b_JetInfo_Jet_CombIVF);
+   fChain->SetBranchAddress("JetInfo.Jet_CombIVF_P", JetInfo_Jet_CombIVF_P, &b_JetInfo_Jet_CombIVF_P);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftMuN", JetInfo_Jet_SoftMuN, &b_JetInfo_Jet_SoftMuN);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftMuP", JetInfo_Jet_SoftMuP, &b_JetInfo_Jet_SoftMuP);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftMu", JetInfo_Jet_SoftMu, &b_JetInfo_Jet_SoftMu);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftElN", JetInfo_Jet_SoftElN, &b_JetInfo_Jet_SoftElN);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftElP", JetInfo_Jet_SoftElP, &b_JetInfo_Jet_SoftElP);
+   fChain->SetBranchAddress("JetInfo.Jet_SoftEl", JetInfo_Jet_SoftEl, &b_JetInfo_Jet_SoftEl);
+   fChain->SetBranchAddress("JetInfo.Jet_nFirstTrack", JetInfo_Jet_nFirstTrack, &b_JetInfo_Jet_nFirstTrack);
+   fChain->SetBranchAddress("JetInfo.Jet_nLastTrack", JetInfo_Jet_nLastTrack, &b_JetInfo_Jet_nLastTrack);
+   fChain->SetBranchAddress("JetInfo.Jet_nFirstSV", JetInfo_Jet_nFirstSV, &b_JetInfo_Jet_nFirstSV);
+   fChain->SetBranchAddress("JetInfo.Jet_nLastSV", JetInfo_Jet_nLastSV, &b_JetInfo_Jet_nLastSV);
+   fChain->SetBranchAddress("JetInfo.Jet_SV_multi", JetInfo_Jet_SV_multi, &b_JetInfo_Jet_SV_multi);
+   fChain->SetBranchAddress("JetInfo.Jet_looseID", JetInfo_Jet_looseID, &b_JetInfo_Jet_looseID);
+   fChain->SetBranchAddress("JetInfo.Jet_tightID", JetInfo_Jet_tightID, &b_JetInfo_Jet_tightID);
+   fChain->SetBranchAddress("JetInfo.nSV", &JetInfo_nSV, &b_JetInfo_nSV);
+   fChain->SetBranchAddress("JetInfo.SV_x", JetInfo_SV_x, &b_JetInfo_SV_x);
+   fChain->SetBranchAddress("JetInfo.SV_y", JetInfo_SV_y, &b_JetInfo_SV_y);
+   fChain->SetBranchAddress("JetInfo.SV_z", JetInfo_SV_z, &b_JetInfo_SV_z);
+   fChain->SetBranchAddress("JetInfo.SV_ex", JetInfo_SV_ex, &b_JetInfo_SV_ex);
+   fChain->SetBranchAddress("JetInfo.SV_ey", JetInfo_SV_ey, &b_JetInfo_SV_ey);
+   fChain->SetBranchAddress("JetInfo.SV_ez", JetInfo_SV_ez, &b_JetInfo_SV_ez);
+   fChain->SetBranchAddress("JetInfo.SV_chi2", JetInfo_SV_chi2, &b_JetInfo_SV_chi2);
+   fChain->SetBranchAddress("JetInfo.SV_ndf", JetInfo_SV_ndf, &b_JetInfo_SV_ndf);
+   fChain->SetBranchAddress("JetInfo.SV_flight", JetInfo_SV_flight, &b_JetInfo_SV_flight);
+   fChain->SetBranchAddress("JetInfo.SV_flightErr", JetInfo_SV_flightErr, &b_JetInfo_SV_flightErr);
+   fChain->SetBranchAddress("JetInfo.SV_deltaR_jet", JetInfo_SV_deltaR_jet, &b_JetInfo_SV_deltaR_jet);
+   fChain->SetBranchAddress("JetInfo.SV_deltaR_sum_jet", JetInfo_SV_deltaR_sum_jet, &b_JetInfo_SV_deltaR_sum_jet);
+   fChain->SetBranchAddress("JetInfo.SV_deltaR_sum_dir", JetInfo_SV_deltaR_sum_dir, &b_JetInfo_SV_deltaR_sum_dir);
+   fChain->SetBranchAddress("JetInfo.SV_vtx_pt", JetInfo_SV_vtx_pt, &b_JetInfo_SV_vtx_pt);
+   fChain->SetBranchAddress("JetInfo.SV_flight2D", JetInfo_SV_flight2D, &b_JetInfo_SV_flight2D);
+   fChain->SetBranchAddress("JetInfo.SV_flight2DErr", JetInfo_SV_flight2DErr, &b_JetInfo_SV_flight2DErr);
+   fChain->SetBranchAddress("JetInfo.SV_totCharge", JetInfo_SV_totCharge, &b_JetInfo_SV_totCharge);
+   fChain->SetBranchAddress("JetInfo.SV_vtxDistJetAxis", JetInfo_SV_vtxDistJetAxis, &b_JetInfo_SV_vtxDistJetAxis);
+   fChain->SetBranchAddress("JetInfo.SV_nTrk", JetInfo_SV_nTrk, &b_JetInfo_SV_nTrk);
+   fChain->SetBranchAddress("JetInfo.SV_mass", JetInfo_SV_mass, &b_JetInfo_SV_mass);
+   fChain->SetBranchAddress("JetInfo.SV_vtx_eta", JetInfo_SV_vtx_eta, &b_JetInfo_SV_vtx_eta);
+   fChain->SetBranchAddress("JetInfo.SV_vtx_phi", JetInfo_SV_vtx_phi, &b_JetInfo_SV_vtx_phi);
+   fChain->SetBranchAddress("JetInfo.Jet_FatJetIdx", JetInfo_Jet_FatJetIdx, &b_JetInfo_Jet_FatJetIdx);
+   fChain->SetBranchAddress("JetInfo.nPFElectron", &JetInfo_nPFElectron, &b_JetInfo_nPFElectron);
+   fChain->SetBranchAddress("JetInfo.PFElectron_IdxJet", JetInfo_PFElectron_IdxJet, &b_JetInfo_PFElectron_IdxJet);
+   fChain->SetBranchAddress("JetInfo.PFElectron_pt", JetInfo_PFElectron_pt, &b_JetInfo_PFElectron_pt);
+   fChain->SetBranchAddress("JetInfo.PFElectron_eta", JetInfo_PFElectron_eta, &b_JetInfo_PFElectron_eta);
+   fChain->SetBranchAddress("JetInfo.PFElectron_phi", JetInfo_PFElectron_phi, &b_JetInfo_PFElectron_phi);
+   fChain->SetBranchAddress("JetInfo.PFElectron_ptrel", JetInfo_PFElectron_ptrel, &b_JetInfo_PFElectron_ptrel);
+   fChain->SetBranchAddress("JetInfo.PFElectron_deltaR", JetInfo_PFElectron_deltaR, &b_JetInfo_PFElectron_deltaR);
+   fChain->SetBranchAddress("JetInfo.PFElectron_ratio", JetInfo_PFElectron_ratio, &b_JetInfo_PFElectron_ratio);
+   fChain->SetBranchAddress("JetInfo.PFElectron_ratioRel", JetInfo_PFElectron_ratioRel, &b_JetInfo_PFElectron_ratioRel);
+   fChain->SetBranchAddress("JetInfo.PFElectron_IP", JetInfo_PFElectron_IP, &b_JetInfo_PFElectron_IP);
+   fChain->SetBranchAddress("JetInfo.PFElectron_IP2D", JetInfo_PFElectron_IP2D, &b_JetInfo_PFElectron_IP2D);
+   fChain->SetBranchAddress("JetInfo.nPFMuon", &JetInfo_nPFMuon, &b_JetInfo_nPFMuon);
+   fChain->SetBranchAddress("JetInfo.PFMuon_IdxJet", JetInfo_PFMuon_IdxJet, &b_JetInfo_PFMuon_IdxJet);
+   fChain->SetBranchAddress("JetInfo.PFMuon_pt", JetInfo_PFMuon_pt, &b_JetInfo_PFMuon_pt);
+   fChain->SetBranchAddress("JetInfo.PFMuon_eta", JetInfo_PFMuon_eta, &b_JetInfo_PFMuon_eta);
+   fChain->SetBranchAddress("JetInfo.PFMuon_phi", JetInfo_PFMuon_phi, &b_JetInfo_PFMuon_phi);
+   fChain->SetBranchAddress("JetInfo.PFMuon_ptrel", JetInfo_PFMuon_ptrel, &b_JetInfo_PFMuon_ptrel);
+   fChain->SetBranchAddress("JetInfo.PFMuon_deltaR", JetInfo_PFMuon_deltaR, &b_JetInfo_PFMuon_deltaR);
+   fChain->SetBranchAddress("JetInfo.PFMuon_ratio", JetInfo_PFMuon_ratio, &b_JetInfo_PFMuon_ratio);
+   fChain->SetBranchAddress("JetInfo.PFMuon_ratioRel", JetInfo_PFMuon_ratioRel, &b_JetInfo_PFMuon_ratioRel);
+   fChain->SetBranchAddress("JetInfo.PFMuon_IP", JetInfo_PFMuon_IP, &b_JetInfo_PFMuon_IP);
+   fChain->SetBranchAddress("JetInfo.PFMuon_IP2D", JetInfo_PFMuon_IP2D, &b_JetInfo_PFMuon_IP2D);
+   fChain->SetBranchAddress("JetInfo.Jet_nFirstTrkTagVarCSV", JetInfo_Jet_nFirstTrkTagVarCSV, &b_JetInfo_Jet_nFirstTrkTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.Jet_nLastTrkTagVarCSV", JetInfo_Jet_nLastTrkTagVarCSV, &b_JetInfo_Jet_nLastTrkTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.Jet_nFirstTrkEtaRelTagVarCSV", JetInfo_Jet_nFirstTrkEtaRelTagVarCSV, &b_JetInfo_Jet_nFirstTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.Jet_nLastTrkEtaRelTagVarCSV", JetInfo_Jet_nLastTrkEtaRelTagVarCSV, &b_JetInfo_Jet_nLastTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackJetPt", JetInfo_TagVarCSV_trackJetPt, &b_JetInfo_TagVarCSV_trackJetPt);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_jetNTracks", JetInfo_TagVarCSV_jetNTracks, &b_JetInfo_TagVarCSV_jetNTracks);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_jetNTracksEtaRel", JetInfo_TagVarCSV_jetNTracksEtaRel, &b_JetInfo_TagVarCSV_jetNTracksEtaRel);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSumJetEtRatio", JetInfo_TagVarCSV_trackSumJetEtRatio, &b_JetInfo_TagVarCSV_trackSumJetEtRatio);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSumJetDeltaR", JetInfo_TagVarCSV_trackSumJetDeltaR, &b_JetInfo_TagVarCSV_trackSumJetDeltaR);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip2dValAboveCharm", JetInfo_TagVarCSV_trackSip2dValAboveCharm, &b_JetInfo_TagVarCSV_trackSip2dValAboveCharm);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip2dSigAboveCharm", JetInfo_TagVarCSV_trackSip2dSigAboveCharm, &b_JetInfo_TagVarCSV_trackSip2dSigAboveCharm);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip3dValAboveCharm", JetInfo_TagVarCSV_trackSip3dValAboveCharm, &b_JetInfo_TagVarCSV_trackSip3dValAboveCharm);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip3dSigAboveCharm", JetInfo_TagVarCSV_trackSip3dSigAboveCharm, &b_JetInfo_TagVarCSV_trackSip3dSigAboveCharm);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_vertexCategory", JetInfo_TagVarCSV_vertexCategory, &b_JetInfo_TagVarCSV_vertexCategory);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_jetNSecondaryVertices", JetInfo_TagVarCSV_jetNSecondaryVertices, &b_JetInfo_TagVarCSV_jetNSecondaryVertices);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_vertexMass", JetInfo_TagVarCSV_vertexMass, &b_JetInfo_TagVarCSV_vertexMass);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_vertexNTracks", JetInfo_TagVarCSV_vertexNTracks, &b_JetInfo_TagVarCSV_vertexNTracks);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_vertexEnergyRatio", JetInfo_TagVarCSV_vertexEnergyRatio, &b_JetInfo_TagVarCSV_vertexEnergyRatio);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_vertexJetDeltaR", JetInfo_TagVarCSV_vertexJetDeltaR, &b_JetInfo_TagVarCSV_vertexJetDeltaR);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_flightDistance2dVal", JetInfo_TagVarCSV_flightDistance2dVal, &b_JetInfo_TagVarCSV_flightDistance2dVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_flightDistance2dSig", JetInfo_TagVarCSV_flightDistance2dSig, &b_JetInfo_TagVarCSV_flightDistance2dSig);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_flightDistance3dVal", JetInfo_TagVarCSV_flightDistance3dVal, &b_JetInfo_TagVarCSV_flightDistance3dVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_flightDistance3dSig", JetInfo_TagVarCSV_flightDistance3dSig, &b_JetInfo_TagVarCSV_flightDistance3dSig);
+   fChain->SetBranchAddress("JetInfo.nTrkTagVarCSV", &JetInfo_nTrkTagVarCSV, &b_JetInfo_nTrkTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.nTrkEtaRelTagVarCSV", &JetInfo_nTrkEtaRelTagVarCSV, &b_JetInfo_nTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackMomentum", JetInfo_TagVarCSV_trackMomentum, &b_JetInfo_TagVarCSV_trackMomentum);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackEta", JetInfo_TagVarCSV_trackEta, &b_JetInfo_TagVarCSV_trackEta);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackPhi", JetInfo_TagVarCSV_trackPhi, &b_JetInfo_TagVarCSV_trackPhi);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackPtRel", JetInfo_TagVarCSV_trackPtRel, &b_JetInfo_TagVarCSV_trackPtRel);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackPPar", JetInfo_TagVarCSV_trackPPar, &b_JetInfo_TagVarCSV_trackPPar);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackDeltaR", JetInfo_TagVarCSV_trackDeltaR, &b_JetInfo_TagVarCSV_trackDeltaR);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackPtRatio", JetInfo_TagVarCSV_trackPtRatio, &b_JetInfo_TagVarCSV_trackPtRatio);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackPParRatio", JetInfo_TagVarCSV_trackPParRatio, &b_JetInfo_TagVarCSV_trackPParRatio);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip2dVal", JetInfo_TagVarCSV_trackSip2dVal, &b_JetInfo_TagVarCSV_trackSip2dVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip2dSig", JetInfo_TagVarCSV_trackSip2dSig, &b_JetInfo_TagVarCSV_trackSip2dSig);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip3dVal", JetInfo_TagVarCSV_trackSip3dVal, &b_JetInfo_TagVarCSV_trackSip3dVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackSip3dSig", JetInfo_TagVarCSV_trackSip3dSig, &b_JetInfo_TagVarCSV_trackSip3dSig);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackDecayLenVal", JetInfo_TagVarCSV_trackDecayLenVal, &b_JetInfo_TagVarCSV_trackDecayLenVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackDecayLenSig", JetInfo_TagVarCSV_trackDecayLenSig, &b_JetInfo_TagVarCSV_trackDecayLenSig);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackJetDistVal", JetInfo_TagVarCSV_trackJetDistVal, &b_JetInfo_TagVarCSV_trackJetDistVal);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackJetDistSig", JetInfo_TagVarCSV_trackJetDistSig, &b_JetInfo_TagVarCSV_trackJetDistSig);
+   fChain->SetBranchAddress("JetInfo.TagVarCSV_trackEtaRel", JetInfo_TagVarCSV_trackEtaRel, &b_JetInfo_TagVarCSV_trackEtaRel);
+   fChain->SetBranchAddress("FatJetInfo.nJet", &FatJetInfo_nJet, &b_FatJetInfo_nJet);
+   fChain->SetBranchAddress("FatJetInfo.Jet_pt", FatJetInfo_Jet_pt, &b_FatJetInfo_Jet_pt);
+   fChain->SetBranchAddress("FatJetInfo.Jet_genpt", FatJetInfo_Jet_genpt, &b_FatJetInfo_Jet_genpt);
+   fChain->SetBranchAddress("FatJetInfo.Jet_residual", FatJetInfo_Jet_residual, &b_FatJetInfo_Jet_residual);
+   fChain->SetBranchAddress("FatJetInfo.Jet_jes", FatJetInfo_Jet_jes, &b_FatJetInfo_Jet_jes);
+   fChain->SetBranchAddress("FatJetInfo.Jet_eta", FatJetInfo_Jet_eta, &b_FatJetInfo_Jet_eta);
+   fChain->SetBranchAddress("FatJetInfo.Jet_phi", FatJetInfo_Jet_phi, &b_FatJetInfo_Jet_phi);
+   fChain->SetBranchAddress("FatJetInfo.Jet_mass", FatJetInfo_Jet_mass, &b_FatJetInfo_Jet_mass);
+   fChain->SetBranchAddress("FatJetInfo.Jet_ntracks", FatJetInfo_Jet_ntracks, &b_FatJetInfo_Jet_ntracks);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nseltracks", FatJetInfo_Jet_nseltracks, &b_FatJetInfo_Jet_nseltracks);
+   fChain->SetBranchAddress("FatJetInfo.Jet_flavour", FatJetInfo_Jet_flavour, &b_FatJetInfo_Jet_flavour);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nbHadrons", FatJetInfo_Jet_nbHadrons, &b_FatJetInfo_Jet_nbHadrons);
+   fChain->SetBranchAddress("FatJetInfo.Jet_ncHadrons", FatJetInfo_Jet_ncHadrons, &b_FatJetInfo_Jet_ncHadrons);
+   fChain->SetBranchAddress("FatJetInfo.Jet_ProbaN", FatJetInfo_Jet_ProbaN, &b_FatJetInfo_Jet_ProbaN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_ProbaP", FatJetInfo_Jet_ProbaP, &b_FatJetInfo_Jet_ProbaP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_Proba", FatJetInfo_Jet_Proba, &b_FatJetInfo_Jet_Proba);
+   fChain->SetBranchAddress("FatJetInfo.Jet_BprobN", FatJetInfo_Jet_BprobN, &b_FatJetInfo_Jet_BprobN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_BprobP", FatJetInfo_Jet_BprobP, &b_FatJetInfo_Jet_BprobP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_Bprob", FatJetInfo_Jet_Bprob, &b_FatJetInfo_Jet_Bprob);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SvxN", FatJetInfo_Jet_SvxN, &b_FatJetInfo_Jet_SvxN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_Svx", FatJetInfo_Jet_Svx, &b_FatJetInfo_Jet_Svx);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SvxNHP", FatJetInfo_Jet_SvxNHP, &b_FatJetInfo_Jet_SvxNHP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SvxHP", FatJetInfo_Jet_SvxHP, &b_FatJetInfo_Jet_SvxHP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SimpIVF_HP", FatJetInfo_Jet_SimpIVF_HP, &b_FatJetInfo_Jet_SimpIVF_HP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SimpIVF_HE", FatJetInfo_Jet_SimpIVF_HE, &b_FatJetInfo_Jet_SimpIVF_HE);
+   fChain->SetBranchAddress("FatJetInfo.Jet_DoubIVF_HE", FatJetInfo_Jet_DoubIVF_HE, &b_FatJetInfo_Jet_DoubIVF_HE);
+   fChain->SetBranchAddress("FatJetInfo.Jet_CombSvxN", FatJetInfo_Jet_CombSvxN, &b_FatJetInfo_Jet_CombSvxN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_CombSvxP", FatJetInfo_Jet_CombSvxP, &b_FatJetInfo_Jet_CombSvxP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_CombSvx", FatJetInfo_Jet_CombSvx, &b_FatJetInfo_Jet_CombSvx);
+   fChain->SetBranchAddress("FatJetInfo.Jet_CombIVF", FatJetInfo_Jet_CombIVF, &b_FatJetInfo_Jet_CombIVF);
+   fChain->SetBranchAddress("FatJetInfo.Jet_CombIVF_P", FatJetInfo_Jet_CombIVF_P, &b_FatJetInfo_Jet_CombIVF_P);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftMuN", FatJetInfo_Jet_SoftMuN, &b_FatJetInfo_Jet_SoftMuN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftMuP", FatJetInfo_Jet_SoftMuP, &b_FatJetInfo_Jet_SoftMuP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftMu", FatJetInfo_Jet_SoftMu, &b_FatJetInfo_Jet_SoftMu);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftElN", FatJetInfo_Jet_SoftElN, &b_FatJetInfo_Jet_SoftElN);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftElP", FatJetInfo_Jet_SoftElP, &b_FatJetInfo_Jet_SoftElP);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SoftEl", FatJetInfo_Jet_SoftEl, &b_FatJetInfo_Jet_SoftEl);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nFirstTrack", FatJetInfo_Jet_nFirstTrack, &b_FatJetInfo_Jet_nFirstTrack);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nLastTrack", FatJetInfo_Jet_nLastTrack, &b_FatJetInfo_Jet_nLastTrack);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nFirstSV", FatJetInfo_Jet_nFirstSV, &b_FatJetInfo_Jet_nFirstSV);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nLastSV", FatJetInfo_Jet_nLastSV, &b_FatJetInfo_Jet_nLastSV);
+   fChain->SetBranchAddress("FatJetInfo.Jet_SV_multi", FatJetInfo_Jet_SV_multi, &b_FatJetInfo_Jet_SV_multi);
+   fChain->SetBranchAddress("FatJetInfo.Jet_looseID", FatJetInfo_Jet_looseID, &b_FatJetInfo_Jet_looseID);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tightID", FatJetInfo_Jet_tightID, &b_FatJetInfo_Jet_tightID);
+   fChain->SetBranchAddress("FatJetInfo.nSV", &FatJetInfo_nSV, &b_FatJetInfo_nSV);
+   fChain->SetBranchAddress("FatJetInfo.SV_x", FatJetInfo_SV_x, &b_FatJetInfo_SV_x);
+   fChain->SetBranchAddress("FatJetInfo.SV_y", FatJetInfo_SV_y, &b_FatJetInfo_SV_y);
+   fChain->SetBranchAddress("FatJetInfo.SV_z", FatJetInfo_SV_z, &b_FatJetInfo_SV_z);
+   fChain->SetBranchAddress("FatJetInfo.SV_ex", FatJetInfo_SV_ex, &b_FatJetInfo_SV_ex);
+   fChain->SetBranchAddress("FatJetInfo.SV_ey", FatJetInfo_SV_ey, &b_FatJetInfo_SV_ey);
+   fChain->SetBranchAddress("FatJetInfo.SV_ez", FatJetInfo_SV_ez, &b_FatJetInfo_SV_ez);
+   fChain->SetBranchAddress("FatJetInfo.SV_chi2", FatJetInfo_SV_chi2, &b_FatJetInfo_SV_chi2);
+   fChain->SetBranchAddress("FatJetInfo.SV_ndf", FatJetInfo_SV_ndf, &b_FatJetInfo_SV_ndf);
+   fChain->SetBranchAddress("FatJetInfo.SV_flight", FatJetInfo_SV_flight, &b_FatJetInfo_SV_flight);
+   fChain->SetBranchAddress("FatJetInfo.SV_flightErr", FatJetInfo_SV_flightErr, &b_FatJetInfo_SV_flightErr);
+   fChain->SetBranchAddress("FatJetInfo.SV_deltaR_jet", FatJetInfo_SV_deltaR_jet, &b_FatJetInfo_SV_deltaR_jet);
+   fChain->SetBranchAddress("FatJetInfo.SV_deltaR_sum_jet", FatJetInfo_SV_deltaR_sum_jet, &b_FatJetInfo_SV_deltaR_sum_jet);
+   fChain->SetBranchAddress("FatJetInfo.SV_deltaR_sum_dir", FatJetInfo_SV_deltaR_sum_dir, &b_FatJetInfo_SV_deltaR_sum_dir);
+   fChain->SetBranchAddress("FatJetInfo.SV_vtx_pt", FatJetInfo_SV_vtx_pt, &b_FatJetInfo_SV_vtx_pt);
+   fChain->SetBranchAddress("FatJetInfo.SV_flight2D", FatJetInfo_SV_flight2D, &b_FatJetInfo_SV_flight2D);
+   fChain->SetBranchAddress("FatJetInfo.SV_flight2DErr", FatJetInfo_SV_flight2DErr, &b_FatJetInfo_SV_flight2DErr);
+   fChain->SetBranchAddress("FatJetInfo.SV_totCharge", FatJetInfo_SV_totCharge, &b_FatJetInfo_SV_totCharge);
+   fChain->SetBranchAddress("FatJetInfo.SV_vtxDistJetAxis", FatJetInfo_SV_vtxDistJetAxis, &b_FatJetInfo_SV_vtxDistJetAxis);
+   fChain->SetBranchAddress("FatJetInfo.SV_nTrk", FatJetInfo_SV_nTrk, &b_FatJetInfo_SV_nTrk);
+   fChain->SetBranchAddress("FatJetInfo.SV_mass", FatJetInfo_SV_mass, &b_FatJetInfo_SV_mass);
+   fChain->SetBranchAddress("FatJetInfo.SV_vtx_eta", FatJetInfo_SV_vtx_eta, &b_FatJetInfo_SV_vtx_eta);
+   fChain->SetBranchAddress("FatJetInfo.SV_vtx_phi", FatJetInfo_SV_vtx_phi, &b_FatJetInfo_SV_vtx_phi);
+   fChain->SetBranchAddress("FatJetInfo.SV_EnergyRatio", FatJetInfo_SV_EnergyRatio, &b_FatJetInfo_SV_EnergyRatio); 
+   fChain->SetBranchAddress("FatJetInfo.SV_dir_x", FatJetInfo_SV_dir_x,&b_FatJetInfo_SV_dir_x);
+   fChain->SetBranchAddress("FatJetInfo.SV_dir_y", FatJetInfo_SV_dir_y,&b_FatJetInfo_SV_dir_y);
+   fChain->SetBranchAddress("FatJetInfo.SV_dir_z", FatJetInfo_SV_dir_z,&b_FatJetInfo_SV_dir_z);	  
+   fChain->SetBranchAddress("FatJetInfo.Jet_ptGroomed", FatJetInfo_Jet_ptGroomed, &b_FatJetInfo_Jet_ptGroomed);
+   fChain->SetBranchAddress("FatJetInfo.Jet_jesGroomed", FatJetInfo_Jet_jesGroomed, &b_FatJetInfo_Jet_jesGroomed);
+   fChain->SetBranchAddress("FatJetInfo.Jet_etaGroomed", FatJetInfo_Jet_etaGroomed, &b_FatJetInfo_Jet_etaGroomed);
+   fChain->SetBranchAddress("FatJetInfo.Jet_phiGroomed", FatJetInfo_Jet_phiGroomed, &b_FatJetInfo_Jet_phiGroomed);
+   fChain->SetBranchAddress("FatJetInfo.Jet_massGroomed", FatJetInfo_Jet_massGroomed, &b_FatJetInfo_Jet_massGroomed);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tau1", FatJetInfo_Jet_tau1, &b_FatJetInfo_Jet_tau1);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tau2", FatJetInfo_Jet_tau2, &b_FatJetInfo_Jet_tau2);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tau1IVF", FatJetInfo_Jet_tau1IVF, &b_FatJetInfo_Jet_tau1IVF);
+   fChain->SetBranchAddress("FatJetInfo.Jet_tau2IVF", FatJetInfo_Jet_tau2IVF, &b_FatJetInfo_Jet_tau2IVF);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nSubJets", FatJetInfo_Jet_nSubJets, &b_FatJetInfo_Jet_nSubJets);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nFirstSJ", FatJetInfo_Jet_nFirstSJ, &b_FatJetInfo_Jet_nFirstSJ);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nLastSJ", FatJetInfo_Jet_nLastSJ, &b_FatJetInfo_Jet_nLastSJ);
+   fChain->SetBranchAddress("FatJetInfo.nSubJet", &FatJetInfo_nSubJet, &b_FatJetInfo_nSubJet);
+   fChain->SetBranchAddress("FatJetInfo.SubJetIdx", FatJetInfo_SubJetIdx, &b_FatJetInfo_SubJetIdx);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nsharedtracks", FatJetInfo_Jet_nsharedtracks, &b_FatJetInfo_Jet_nsharedtracks);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nsubjettracks", FatJetInfo_Jet_nsubjettracks, &b_FatJetInfo_Jet_nsubjettracks);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nsharedsubjettracks", FatJetInfo_Jet_nsharedsubjettracks, &b_FatJetInfo_Jet_nsharedsubjettracks);
+   fChain->SetBranchAddress("FatJetInfo.nPFElectron", &FatJetInfo_nPFElectron, &b_FatJetInfo_nPFElectron);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_IdxJet", FatJetInfo_PFElectron_IdxJet, &b_FatJetInfo_PFElectron_IdxJet);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_pt", FatJetInfo_PFElectron_pt, &b_FatJetInfo_PFElectron_pt);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_eta", FatJetInfo_PFElectron_eta, &b_FatJetInfo_PFElectron_eta);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_phi", FatJetInfo_PFElectron_phi, &b_FatJetInfo_PFElectron_phi);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_ptrel", FatJetInfo_PFElectron_ptrel, &b_FatJetInfo_PFElectron_ptrel);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_deltaR", FatJetInfo_PFElectron_deltaR, &b_FatJetInfo_PFElectron_deltaR);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_ratio", FatJetInfo_PFElectron_ratio, &b_FatJetInfo_PFElectron_ratio);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_ratioRel", FatJetInfo_PFElectron_ratioRel, &b_FatJetInfo_PFElectron_ratioRel);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_IP", FatJetInfo_PFElectron_IP, &b_FatJetInfo_PFElectron_IP);
+   fChain->SetBranchAddress("FatJetInfo.PFElectron_IP2D", FatJetInfo_PFElectron_IP2D, &b_FatJetInfo_PFElectron_IP2D);
+   fChain->SetBranchAddress("FatJetInfo.nPFMuon", &FatJetInfo_nPFMuon, &b_FatJetInfo_nPFMuon);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_IdxJet", FatJetInfo_PFMuon_IdxJet, &b_FatJetInfo_PFMuon_IdxJet);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_pt", FatJetInfo_PFMuon_pt, &b_FatJetInfo_PFMuon_pt);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_eta", FatJetInfo_PFMuon_eta, &b_FatJetInfo_PFMuon_eta);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_phi", FatJetInfo_PFMuon_phi, &b_FatJetInfo_PFMuon_phi);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_ptrel", FatJetInfo_PFMuon_ptrel, &b_FatJetInfo_PFMuon_ptrel);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_deltaR", FatJetInfo_PFMuon_deltaR, &b_FatJetInfo_PFMuon_deltaR);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_ratio", FatJetInfo_PFMuon_ratio, &b_FatJetInfo_PFMuon_ratio);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_ratioRel", FatJetInfo_PFMuon_ratioRel, &b_FatJetInfo_PFMuon_ratioRel);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_IP", FatJetInfo_PFMuon_IP, &b_FatJetInfo_PFMuon_IP);
+   fChain->SetBranchAddress("FatJetInfo.PFMuon_IP2D", FatJetInfo_PFMuon_IP2D, &b_FatJetInfo_PFMuon_IP2D);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nFirstTrkTagVarCSV", FatJetInfo_Jet_nFirstTrkTagVarCSV, &b_FatJetInfo_Jet_nFirstTrkTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nLastTrkTagVarCSV", FatJetInfo_Jet_nLastTrkTagVarCSV, &b_FatJetInfo_Jet_nLastTrkTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nFirstTrkEtaRelTagVarCSV", FatJetInfo_Jet_nFirstTrkEtaRelTagVarCSV, &b_FatJetInfo_Jet_nFirstTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.Jet_nLastTrkEtaRelTagVarCSV", FatJetInfo_Jet_nLastTrkEtaRelTagVarCSV, &b_FatJetInfo_Jet_nLastTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackJetPt", FatJetInfo_TagVarCSV_trackJetPt, &b_FatJetInfo_TagVarCSV_trackJetPt);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_jetNTracks", FatJetInfo_TagVarCSV_jetNTracks, &b_FatJetInfo_TagVarCSV_jetNTracks);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_jetNTracksEtaRel", FatJetInfo_TagVarCSV_jetNTracksEtaRel, &b_FatJetInfo_TagVarCSV_jetNTracksEtaRel);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSumJetEtRatio", FatJetInfo_TagVarCSV_trackSumJetEtRatio, &b_FatJetInfo_TagVarCSV_trackSumJetEtRatio);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSumJetDeltaR", FatJetInfo_TagVarCSV_trackSumJetDeltaR, &b_FatJetInfo_TagVarCSV_trackSumJetDeltaR);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip2dValAboveCharm", FatJetInfo_TagVarCSV_trackSip2dValAboveCharm, &b_FatJetInfo_TagVarCSV_trackSip2dValAboveCharm);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip2dSigAboveCharm", FatJetInfo_TagVarCSV_trackSip2dSigAboveCharm, &b_FatJetInfo_TagVarCSV_trackSip2dSigAboveCharm);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip3dValAboveCharm", FatJetInfo_TagVarCSV_trackSip3dValAboveCharm, &b_FatJetInfo_TagVarCSV_trackSip3dValAboveCharm);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip3dSigAboveCharm", FatJetInfo_TagVarCSV_trackSip3dSigAboveCharm, &b_FatJetInfo_TagVarCSV_trackSip3dSigAboveCharm);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_vertexCategory", FatJetInfo_TagVarCSV_vertexCategory, &b_FatJetInfo_TagVarCSV_vertexCategory);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_jetNSecondaryVertices", FatJetInfo_TagVarCSV_jetNSecondaryVertices, &b_FatJetInfo_TagVarCSV_jetNSecondaryVertices);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_vertexMass", FatJetInfo_TagVarCSV_vertexMass, &b_FatJetInfo_TagVarCSV_vertexMass);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_vertexNTracks", FatJetInfo_TagVarCSV_vertexNTracks, &b_FatJetInfo_TagVarCSV_vertexNTracks);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_vertexEnergyRatio", FatJetInfo_TagVarCSV_vertexEnergyRatio, &b_FatJetInfo_TagVarCSV_vertexEnergyRatio);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_vertexJetDeltaR", FatJetInfo_TagVarCSV_vertexJetDeltaR, &b_FatJetInfo_TagVarCSV_vertexJetDeltaR);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_flightDistance2dVal", FatJetInfo_TagVarCSV_flightDistance2dVal, &b_FatJetInfo_TagVarCSV_flightDistance2dVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_flightDistance2dSig", FatJetInfo_TagVarCSV_flightDistance2dSig, &b_FatJetInfo_TagVarCSV_flightDistance2dSig);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_flightDistance3dVal", FatJetInfo_TagVarCSV_flightDistance3dVal, &b_FatJetInfo_TagVarCSV_flightDistance3dVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_flightDistance3dSig", FatJetInfo_TagVarCSV_flightDistance3dSig, &b_FatJetInfo_TagVarCSV_flightDistance3dSig);
+   fChain->SetBranchAddress("FatJetInfo.nTrkTagVarCSV", &FatJetInfo_nTrkTagVarCSV, &b_FatJetInfo_nTrkTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.nTrkEtaRelTagVarCSV", &FatJetInfo_nTrkEtaRelTagVarCSV, &b_FatJetInfo_nTrkEtaRelTagVarCSV);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackMomentum", FatJetInfo_TagVarCSV_trackMomentum, &b_FatJetInfo_TagVarCSV_trackMomentum);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackEta", FatJetInfo_TagVarCSV_trackEta, &b_FatJetInfo_TagVarCSV_trackEta);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackPhi", FatJetInfo_TagVarCSV_trackPhi, &b_FatJetInfo_TagVarCSV_trackPhi);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackPtRel", FatJetInfo_TagVarCSV_trackPtRel, &b_FatJetInfo_TagVarCSV_trackPtRel);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackPPar", FatJetInfo_TagVarCSV_trackPPar, &b_FatJetInfo_TagVarCSV_trackPPar);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackDeltaR", FatJetInfo_TagVarCSV_trackDeltaR, &b_FatJetInfo_TagVarCSV_trackDeltaR);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackPtRatio", FatJetInfo_TagVarCSV_trackPtRatio, &b_FatJetInfo_TagVarCSV_trackPtRatio);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackPParRatio", FatJetInfo_TagVarCSV_trackPParRatio, &b_FatJetInfo_TagVarCSV_trackPParRatio);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip2dVal", FatJetInfo_TagVarCSV_trackSip2dVal, &b_FatJetInfo_TagVarCSV_trackSip2dVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip2dSig", FatJetInfo_TagVarCSV_trackSip2dSig, &b_FatJetInfo_TagVarCSV_trackSip2dSig);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip3dVal", FatJetInfo_TagVarCSV_trackSip3dVal, &b_FatJetInfo_TagVarCSV_trackSip3dVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackSip3dSig", FatJetInfo_TagVarCSV_trackSip3dSig, &b_FatJetInfo_TagVarCSV_trackSip3dSig);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackDecayLenVal", FatJetInfo_TagVarCSV_trackDecayLenVal, &b_FatJetInfo_TagVarCSV_trackDecayLenVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackDecayLenSig", FatJetInfo_TagVarCSV_trackDecayLenSig, &b_FatJetInfo_TagVarCSV_trackDecayLenSig);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackJetDistVal", FatJetInfo_TagVarCSV_trackJetDistVal, &b_FatJetInfo_TagVarCSV_trackJetDistVal);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackJetDistSig", FatJetInfo_TagVarCSV_trackJetDistSig, &b_FatJetInfo_TagVarCSV_trackJetDistSig);
+   fChain->SetBranchAddress("FatJetInfo.TagVarCSV_trackEtaRel", FatJetInfo_TagVarCSV_trackEtaRel, &b_FatJetInfo_TagVarCSV_trackEtaRel);
+   Notify();
+}
+
+Bool_t PrepareForTraining::Notify()
+{
+   // The Notify() function is called when a new file is opened. This
+   // can be either for a new TTree in a TChain or when when a new TTree
+   // is started when using PROOF. It is normally not necessary to make changes
+   // to the generated code, but the routine can be extended by the
+   // user if needed. The return value is currently not used.
+
+   return kTRUE;
+}
+
+void PrepareForTraining::Show(Long64_t entry)
+{
+// Print contents of entry.
+// If entry is not specified, print current entry
+   if (!fChain) return;
+   fChain->Show(entry);
+}
+Int_t PrepareForTraining::Cut(Long64_t entry)
+{
+// This function may be called from Loop.
+// returns  1 if entry is accepted.
+// returns -1 otherwise.
+   return 1;
+}
+#endif // #ifdef PrepareForTraining_cxx
