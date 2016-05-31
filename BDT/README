@@ -1,4 +1,4 @@
-ROOT TMVA based Top Tagger
+ROOT TMVA based double tagger
 
 In order to run, you need to have ROOT installed. At PSI you can do cd /swshare/ROOT/root_v5.34.18_slc6_amd64_py26_pythia6; export LD_LIBRARY_PATH=/swshare/ROOT/pythia6/pythia6:; source bin/thisroot.sh; cd -
 
